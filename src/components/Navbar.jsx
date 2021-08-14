@@ -3,10 +3,10 @@ import {Container, Nav, Navbar, NavItem} from "react-bootstrap";
 
 const NavBar = () => {
     return(
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
             <Container>
                 <Nav className="navbar-brand">
-                    <Nav.Link href="#about" className="text-white text-decoration-none">
+                    <Nav.Link href="/" className="text-white text-decoration-none">
                          Moahmmed Siam Anzir
                     </Nav.Link>
                 </Nav>

@@ -12,8 +12,8 @@ const Projects = () => {
         setIsShown({active: false,id:id});
     }
     return(
-        <section id="projects">
-            <Container className="col-lg-8 col-md-10 mx-auto mt-5">
+        <section id="projects" className="col-xxl-8 col-xl-9 col-lg-12 col-md-6 mx-auto mt-5">
+            <Container>
                 <div className="text-center">
                     <h2>Apps I've Made</h2>
                 </div>
@@ -21,12 +21,12 @@ const Projects = () => {
                     <Row>
                         {
                             allProjects.map((project) => (
-                                <Col key={project.id}>
+                                <Col key={project.id} >
                                     <div style={{height:"220px",width:"420px"}}>
                                         <div key={project.image} onMouseOver={() =>changeBackground(project.id)} onMouseLeave={() => initialBackground(project.id)}>
                                             {isShown.active && isShown.id === project.id ?
                                                 (<Card border="primary" style={{background:"#323232",height:"220px",width:'420px',textAlign:'center',color:"white"}}>
-                                                    <Card.Title> {project.title} </Card.Title>
+                                                    <Card.Title style={{marginTop:'1rem'}}> {project.title} </Card.Title>
                                                     <Card.Body>{project.description}</Card.Body>
                                                     <Card.Footer>{project.subtitle}</Card.Footer>
                                                     <Card.Link href={project.link}> Project Link </Card.Link>

@@ -6,12 +6,14 @@ import final from "../assets/sureFinal.jpg";
 const About = () => {
     return(
         <section id="about">
+            <br/>
+            <br/>
             <Container className="mt-3">
                 <Row className="pt-2">
                     <Col className="justify-content-start" lg={6} md={6} sm={12}>
                         <Image alt="portfolio" src={final} width={400} height={350} roundedCircle/>
                     </Col>
-                    <Col className="justify-content-start" lg={6} md={6} sm={6}>
+                    <Col className="justify-content-start" lg={6} md={6} sm={12}>
                         <br/>
                         <br/>
                         <h1>
@@ -25,8 +27,9 @@ const About = () => {
                             laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
                             Laborum, voluptas natus?
                         </p>
-                        <Button variant="outline-primary" style={{marginRight:".5rem"}}>Work With Me</Button>
-                        <Button variant="outline-primary" href="#projects"> See My Past Works </Button>
+                        <Button variant="outline-primary" href="#contact" style={{marginRight:".5rem"}}>Work With Me</Button>
+                        <Button variant="outline-primary" href="#projects" style={{marginRight:".5rem"}}> See My Past Works </Button>
+                        <Button variant="outline-primary"> Download Resume </Button>
                     </Col>
                 </Row>
             </Container>

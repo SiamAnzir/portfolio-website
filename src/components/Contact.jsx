@@ -12,7 +12,7 @@ const Contact = () => {
         <section id="contact">
             <Container className="mt-3">
                 <Row className="pt-2">
-                    <Col className="justify-content-start" xl={8} lg={12} md={12} sm={12}>
+                    <Col className="justify-content-start" xl={8} lg={12} md={12} sm={12} xs={12}>
                         <Card border="dark" style={{ backgroundImage: `url(${location})`,height:'520px',width:'700px' }}>
                             <Card border="primary" style={{width:'30rem',background:'#323232',color:'white',marginLeft:'110px',marginTop:'10px'}}>
                                 <Card.Body>
