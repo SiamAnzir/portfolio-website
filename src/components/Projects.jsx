@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import {Container, Card, Row, Col, CardImg} from "react-bootstrap";
 import {allProjects} from "../store/store";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faTasks} from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
     const [isShown, setIsShown] = useState({active:false,id:""});
@@ -15,7 +17,7 @@ const Projects = () => {
         <section id="projects" className="col-xxl-8 col-xl-9 col-lg-12 col-md-6 mx-auto mt-5">
             <Container>
                 <div className="text-center">
-                    <h2>Apps I've Made</h2>
+                    <h2> <FontAwesomeIcon icon={faTasks} style={{marginRight:'.5rem'}}/> <u> Projects I've Made </u> </h2>
                 </div>
                 <div className="pt-5">
                     <Row>
