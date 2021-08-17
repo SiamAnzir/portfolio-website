@@ -32,7 +32,40 @@
   left: 0;
   width: 100%;
 }
-@keyframes App-logo-spin {
+.mapImage{
+  height:520px;
+  width:700px;
+}
+.addressCard{
+  width:480px;
+  margin-left:110px;
+  margin-top:10px;
+}
+@media screen and (max-width: 760px){
+  .mapImage{
+    width: 530px;
+    height: 520px;
+    position: relative;
+  }
+  .addressCard{
+    width:300px;
+    margin-left:50px;
+    margin-top:10px;
+  }
+}
+@media screen and (max-width: 450px){
+  .mapImage{
+    width: 400px;
+    height: 520px;
+    position: relative;
+  }
+  .addressCard{
+    width:300px;
+    margin-left:30px;
+    margin-top:10px;
+  }
+}
+  @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
