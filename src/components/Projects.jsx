@@ -14,12 +14,12 @@ const Projects = () => {
         setIsShown({active: false,id:id});
     }
     return(
-        <section id="projects" className="col-xxl-8 col-xl-9 col-lg-12 col-md-6 mx-auto mt-5">
+        <section id="projects" className="mt-5">
             <Container>
                 <div className="text-center">
                     <h2> <FontAwesomeIcon icon={faTasks} style={{marginRight:'.5rem'}}/> <u> Projects I've Made </u> </h2>
                 </div>
-                <div className="pt-5">
+                <div className="col-xxl-8 col-xl-10 col-lg-12 col-md-6 mx-auto pt-5">
                     <Row>
                         {
                             allProjects.map((project) => (
