@@ -1,15 +1,17 @@
 import React from "react";
 import {Card, Col, Container, Image, Row} from "react-bootstrap";
 import {allTestimonials} from "../store/store";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCertificate} from "@fortawesome/free-solid-svg-icons";
 
 const Testimonials = () => {
   return(
-      <section id="testimonials">
-          <Container className="col-lg-8 col-md-10 mx-auto mt-5">
+      <section id="testimonials" className="mt-5">
+          <Container>
               <div className="text-center">
-                  <h2> Client Testimonials </h2>
+                  <h2> <FontAwesomeIcon icon={faCertificate}/> <u> Client Testimonials </u></h2>
               </div>
-              <div className="mt-5">
+              <div className="col-xxl-8 col-xl-9 col-lg-12 col-md-6 mx-auto mt-5">
                   <Row>
                       {
                           allTestimonials.map((testimonial) => (
