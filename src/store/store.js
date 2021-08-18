@@ -76,14 +76,14 @@ export const allSkills = [
 export const allTestimonials = [
     {
         id:1,
-        quote:"''Lorem ipsum dolor sit amet, consectetur adipisicing elit. cupiditate voluptas?Laborum?''",
+        quote:"'' Lorem ipsum dolor sit amet, consectetur adipisicing elit. cupiditate voluptas?Laborum? ''",
         name:"Ronaldo",
         image:crImg,
         company:"Juventus"
     },
     {
         id:2,
-        quote:"''Quilaborum quasi, incidunt dolore iste nostrum cupiditate voluptas?Laborum, voluptas natus?''",
+        quote:"'' Quilaborum quasi, incidunt dolore iste nostrum cupiditate voluptas? voluptas natus? ''",
         name:"Messi",
         image:messiImg,
         company:"PSG"
