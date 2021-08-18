@@ -1,6 +1,13 @@
 import React from "react";
-import {Col, Container, Row, Button, Image} from "react-bootstrap";
-import final from "../assets/sureFinal.jpg";
+import {Col, Container, Row, Button, Image, Card} from "react-bootstrap";
+import ProfilePic from "../assets/ProfilePic.jpg"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faFacebook, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {
+    faDownload,
+    faEnvelopeOpenText,
+    faTasks
+} from "@fortawesome/free-solid-svg-icons";
 
 
 const About = () => {
@@ -8,30 +15,67 @@ const About = () => {
         <section id="about">
             <br/>
             <br/>
-            <Container className="mt-3">
-                <Row className="pt-2">
-                    <Col className="justify-content-start" lg={6} md={6} sm={12}>
-                        <Image alt="portfolio" src={final} width={400} height={350} roundedCircle/>
-                    </Col>
-                    <Col className="justify-content-start" lg={6} md={6} sm={12}>
-                        <br/>
-                        <br/>
-                        <h1>
-                            Hi, I'm Siam.
-                        </h1>
-                        <h2>I love to build amazing web apps.</h2>
-                        <p className="mb-8 leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                            Laborum, voluptas natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                            laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                            Laborum, voluptas natus?
-                        </p>
-                        <Button variant="outline-primary" href="#contact" style={{marginRight:".5rem"}}>Work With Me</Button>
-                        <Button variant="outline-primary" href="#projects" style={{marginRight:".5rem"}}> See My Past Works </Button>
-                        <Button variant="outline-primary"> Download Resume </Button>
-                    </Col>
-                </Row>
+            <Container className="aboutCard">
+                <div>
+                    <Row className="pt-2">
+                        <Col className="justify-content-start" xl={4} lg={5} md={12} sm={12}>
+                            <div style={{paddingTop:'2rem',paddingBottom:'1.5rem'}} >
+                                <Image alt="portfolio" src={ProfilePic} width={250} height={250} roundedCircle/>
+                            </div>
+                            <div style={{minHeight:'200px',position:'relative'}}>
+                                <Card border="dark" className="linkCard">
+                                    <Card.Text style={{textAlign:'center',marginRight:'.8rem'}}><FontAwesomeIcon icon={faGithub} style={{marginRight:'.5rem'}}/>Github </Card.Text>
+                                </Card>
+                                <Card border="dark" className="linkCard" style={{marginTop:'.5rem'}}>
+                                    <Card.Text style={{textAlign:'center',marginRight:'.8rem'}}><FontAwesomeIcon icon={faFacebook} style={{marginRight:'.5rem'}}/> Facebook </Card.Text>
+                                </Card>
+                                <Card border="dark" className="linkCard" style={{marginTop:'.5rem'}}>
+                                    <Card.Text style={{textAlign:'center',marginRight:'.8rem'}}><FontAwesomeIcon icon={faLinkedin} style={{marginRight:'.5rem'}}/> Linkedin </Card.Text>
+                                </Card>
+                                <Card border="dark" className="linkCard" style={{marginTop:'.5rem'}}>
+                                    <Card.Text style={{textAlign:'center',marginRight:'.8rem'}}><FontAwesomeIcon icon={faInstagram} style={{marginRight:'.5rem'}}/> Instagram </Card.Text>
+                                </Card>
+                            </div>
+                        </Col>
+                        <Col className="justify-content-start" xl={8} lg={7} md={12} sm={12}>
+                            <br/>
+                            <Card border="light">
+                                <Card.Body>
+                                    <Card.Title style={{marginBottom:'3.5rem'}}>
+                                        <h1>
+                                            Hi, I'm Siam.
+                                        </h1>
+                                        <h2>I love to build amazing web apps.</h2>
+                                    </Card.Title>
+                                    <Card.Text className="mb-8 leading-relaxed" style={{minHeight:'170px'}}>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                                        laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
+                                        Laborum, voluptas natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                                        laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
+                                        Laborum, voluptas natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                                        laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
+                                        Laborum, voluptas natus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+                                        laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
+                                        Laborum, voluptas natus?
+                                    </Card.Text>
+                                    <div style={{paddingTop:'3rem'}}>
+                                        <Row>
+                                            <Col xl={4} lg={4} md={4} sm={12}>
+                                                <Button variant="outline-primary" href="#contact" className="responsiveBtn"><FontAwesomeIcon icon={faEnvelopeOpenText} style={{marginRight:'.5rem'}}/> Work With Me</Button>
+                                            </Col>
+                                            <Col xl={4} lg={4} md={4} sm={12}>
+                                                <Button variant="outline-primary" href="#projects" className="responsiveBtn"><FontAwesomeIcon icon={faTasks} style={{marginRight:'.5rem'}}/>See My Past Works</Button>
+                                            </Col>
+                                            <Col xl={4} lg={4} md={4} sm={12}>
+                                                <Button variant="outline-primary" className="responsiveBtn"><FontAwesomeIcon icon={faDownload} style={{marginRight:'.5rem'}}/>Download Resume </Button>
+                                            </Col>
+                                        </Row>
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </div>
             </Container>
         </section>
     )
