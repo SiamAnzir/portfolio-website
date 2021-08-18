@@ -27,9 +27,17 @@
 .App-link {
   color: #61dafb;
 }
-.footer{
-  bottom: 0;
-  left: 0;
+.linkCard{
+  width:250px;
+  height:40px;
+  padding-top:.5rem;
+}
+.aboutCard{
+  min-height:620px;
+  position: relative;
+  margin-top:1rem;
+}
+.responsiveBtn{
   width: 100%;
 }
 .mapImage{
@@ -40,6 +48,11 @@
   width:480px;
   margin-left:110px;
   margin-top:10px;
+}
+.footer{
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 @media screen and (max-width: 760px){
   .mapImage{
@@ -52,6 +65,9 @@
     margin-left:50px;
     margin-top:10px;
   }
+  .responsiveBtn{
+    margin-top: .5rem;
+  }
 }
 @media screen and (max-width: 450px){
   .mapImage{
@@ -63,6 +79,9 @@
     width:300px;
     margin-left:30px;
     margin-top:10px;
+  }
+  .responsiveBtn{
+    margin-top: .5rem;
   }
 }
   @keyframes App-logo-spin {
