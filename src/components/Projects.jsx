@@ -44,8 +44,8 @@ const Projects = () => {
                         }
                     </Row>
                 </div>
+                <br/>
             </Container>
-            <br/>
             <br/>
         </section>
     )
