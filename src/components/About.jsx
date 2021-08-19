@@ -1,6 +1,7 @@
 import React from "react";
 import {Col, Container, Row, Button, Image, Card} from "react-bootstrap";
 import ProfilePic from "../assets/ProfilePic.jpg";
+import emoji from "../assets/emoji.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {
@@ -37,7 +38,7 @@ const About = () => {
                                 <Card.Body>
                                     <Card.Title style={{marginBottom:'3.5rem'}}>
                                         <h1>
-                                            Hi, I'm Siam.
+                                            Hi, I'm Siam. <Image src={emoji} alt='emoji' height={50} width={50} roundedCircle/>
                                         </h1>
                                         <h2>I love to build amazing web apps.</h2>
                                     </Card.Title>
