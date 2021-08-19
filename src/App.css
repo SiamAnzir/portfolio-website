@@ -31,9 +31,10 @@
   width:250px;
   height:40px;
   padding-top:.5rem;
+  margin-top:.5rem;
 }
 .aboutCard{
-  min-height:620px;
+  min-height:600px;
   position: relative;
   margin-top:1rem;
 }

@@ -10,9 +10,9 @@ const Contact = () => {
     }
     return(
         <section id="contact" className="col-xxl-10 col-xl-10 col-lg-12 col-md-12 mx-auto">
-            <Container className="mt-3">
+            <Container className="mt-5">
                 <Row className="pt-2">
-                    <Col className="justify-content-start">
+                    <Col className="justify-content-start pb-3">
                         <Card border="dark" className="mapImage" style={{ backgroundImage: `url(${location})` }}>
                             <Card border="primary" className="addressCard" style={{background:'#323232',color:'white'}}>
                                 <Card.Body>

@@ -31,6 +31,7 @@ const Skills = () => {
                     </Row>
                 </div>
             </Container>
+            <br/>
         </section>
     )
 }

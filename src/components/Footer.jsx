@@ -18,7 +18,7 @@ const Footer = () => {
             <Container className="col-lg-10 col-md-10 mx-auto">
                 <br/>
                 <Row>
-                    <Col className="text-start" lg={4} md={12} sm={12}>
+                    <Col className="text-start" lg={4} md={4} sm={4}>
                         <p className="text-muted">Connect with me through ~ </p>
                         <p>
                             <a style={{ marginLeft: '.5rem' }} href="https://www.facebook.com/md.siamanzir/"><FontAwesomeIcon icon={faFacebook} size="2x" color="black" /></a>
@@ -27,11 +27,11 @@ const Footer = () => {
                             <a style={{ marginLeft: '.5rem' }} href="https://www.twitter.com/"><FontAwesomeIcon icon={faTwitter} size="2x" color="black" /></a>
                         </p>
                     </Col>
-                    <Col className="text-center" lg={4} md={12} sm={12}>
+                    <Col className="text-center" lg={4} md={4} sm={4}>
                         <br/>
                         <p><a href="https://github.com/SiamAnzir/react-blogsite"><FontAwesomeIcon icon={faGithub}/> Source Code </a></p>
                     </Col>
-                    <Col className="text-end" lg={4} md={12} sm={12}>
+                    <Col className="text-end" lg={4} md={4} sm={4}>
                         <p className="text-muted">Show my other projects on ~ </p>
                         <p>
                             <a style={{ marginLeft: '.5rem' }} href="https://github.com/SiamAnzir"><FontAwesomeIcon icon={faGithub} size="2x" color="black"/></a>
