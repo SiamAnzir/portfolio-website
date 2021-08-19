@@ -13,7 +13,7 @@ const Skills = () => {
                     <p style={{marginRight:'4rem',marginTop:'1rem'}}>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
                         ipsa delectus eum quo voluptas aspernatur accusantium distinctio
-                        possimus est.
+                        possimu est.
                     </p>
                 </div>
                 <div className="mt-5">
