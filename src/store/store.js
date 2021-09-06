@@ -4,6 +4,7 @@ import movieImg from "../assets/movie.png";
 import blogImg from "../assets/blogSite.png";
 import messiImg from "../assets/messi.png";
 import crImg from "../assets/cr7.png"
+import neymarImg from "../assets/neymar.jpg";
 
 export const allProjects = [
     {
@@ -79,13 +80,20 @@ export const allTestimonials = [
         quote:"'' Lorem ipsum dolor sit amet, consectetur adipisicing elit. cupiditate voluptas?Laborum? ''",
         name:"Ronaldo",
         image:crImg,
-        company:"Juventus"
+        alt:"first-slide",
     },
     {
         id:2,
         quote:"'' Quilaborum quasi, incidunt dolore iste nostrum cupiditate voluptas? voluptas natus? ''",
         name:"Messi",
         image:messiImg,
-        company:"PSG"
+        alt:"second-slide",
+    },
+    {
+        id:3,
+        quote:"'' Quilaborum quasi, incidunt dolore iste nostrum cupiditate voluptas? voluptas natus? ''",
+        name:"Neymar",
+        image:neymarImg,
+        alt:"third-slide",
     }
 ]
