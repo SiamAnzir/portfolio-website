@@ -6,7 +6,7 @@ const NavBar = () => {
         <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
             <Container>
                 <Nav className="navbar-brand">
-                    <Nav.Link href="/" className="text-white text-decoration-none">
+                    <Nav.Link href="#about" className="text-white text-decoration-none">
                          Moahmmed Siam Anzir
                     </Nav.Link>
                 </Nav>
