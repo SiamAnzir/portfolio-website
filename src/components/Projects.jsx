@@ -30,8 +30,8 @@ const Projects = () => {
                                                 (<Card border="primary" style={{background:"#323232",height:"220px",width:'420px',textAlign:'center',color:"white"}}>
                                                     <Card.Title style={{marginTop:'1rem'}}> {project.title} </Card.Title>
                                                     <Card.Body>{project.description}</Card.Body>
-                                                    <Card.Footer>{project.subtitle}</Card.Footer>
-                                                    <Card.Link href={project.link}> Project Link </Card.Link>
+                                                    <Card.Footer> <Card.Link href={project.link}> Project Link </Card.Link> </Card.Footer>
+                                                    <Card.Text> {project.subtitle} </Card.Text>
                                                 </Card>) :
                                                 (<Card border="primary">
                                                     <CardImg src={project.image} style={{height:"220px",width:"420px"}} alt="projectImg"/>
