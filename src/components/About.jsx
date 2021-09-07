@@ -21,7 +21,7 @@ const About = () => {
                     <Row className="pt-2">
                         <Col className="justify-content-start" xl={4} lg={5} md={12} sm={12}>
                             <div style={{paddingTop:'2rem',paddingBottom:'1.5rem'}} >
-                                <Image alt="portfolio" src={ProfilePic} width={250} height={250} roundedCircle/>
+                                <Image alt="portfolio" src={ProfilePic} width={250} height={250} loading="lazy" roundedCircle/>
                             </div>
                             <div style={{minHeight:'200px',position:'relative'}}>
                                 <Col md={6} sm={6} xs={6}>
