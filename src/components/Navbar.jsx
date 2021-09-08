@@ -6,9 +6,11 @@ const NavBar = () => {
         <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
             <Container>
                 <Nav className="navbar-brand">
-                    <Nav.Link href="#about" className="text-white text-decoration-none">
-                         Moahmmed Siam Anzir
-                    </Nav.Link>
+                    <div className="border rounded">
+                        <Nav.Link href="#about" className="text-white text-decoration-none">
+                            Moahmmed Siam Anzir
+                        </Nav.Link>
+                    </div>
                 </Nav>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
