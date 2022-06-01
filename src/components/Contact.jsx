@@ -33,8 +33,9 @@ const Contact = () => {
                     <Col className="justify-content-start" xl={4} lg={12} md={12} sm={12}>
                         <h1> <FontAwesomeIcon icon={faEnvelopeOpen}/> Contact </h1>
                         <p className="leading-relaxed mb-5">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+                            If you have any project or need help. Contact with me
+                            <br/>
+                            <br/>
                         </p>
                         <Form onSubmit={handleSubmit}>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
