@@ -59,7 +59,7 @@ export const allSkills = [
         name:"Material-UI",
         id:4,
     },{
-        name:"React",
+        name:"ReactJS",
         id:5,
     },{
         name:"NodeJS",
